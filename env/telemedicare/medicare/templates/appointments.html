@@ -1,0 +1,6 @@
+<h1>My Appointments</h1>
+<ul>
+    {% for appointment in appointments %}
+    <li>{{ appointment.date_time }} - {{ appointment.doctor.user.username }}</li>
+    {% endfor %}
+</ul>
